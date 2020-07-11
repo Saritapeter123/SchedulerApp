@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: lightgray;
 }
 
 textarea{
@@ -19,6 +20,7 @@ textarea{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  background-color: white;
 }
 
 .description{
@@ -28,6 +30,15 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+}
+
+.input-group{
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.form-control{
+  background-color: #ffe5ea;
 }
 
 .row {
