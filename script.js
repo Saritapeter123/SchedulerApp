@@ -26,15 +26,15 @@ function initializeLocalStorage() {
 };
 
 function saveInputToLocalStorage() {
-    localStorage.setItem("inputBox", JSON.stringify());
+    localStorage.setItem("inputBox", JSON.stringify(inputBox));
 };
 
 function saveSchedule() {
-
+    initializeLocalStorage();
 };
 
-function updateInputInSchedule() {
-
+function updateInputInSchedule(inputBox) {
+    
 };
 
 
