@@ -21,6 +21,10 @@ $(document).ready(function() {
 
 $("#todays-date h2").text(moment().format("dddd") + ", " + moment().format("MMMM Do YYYY, h:mm:ss a"));
 
+function saveButton() {
+    saveButton.addEventListner("click")
+};
+
 function initializeLocalStorage() {
     localStorage.setItem("inputBox", JSON.stringify(inputBox));
 };
@@ -34,7 +38,7 @@ function saveSchedule() {
 };
 
 function updateInputInSchedule(inputBox) {
-    
+
 };
 
 
