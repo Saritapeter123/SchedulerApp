@@ -26,7 +26,7 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <div class="content-cneter" id="todays-date"><h2></h2></div>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
@@ -35,8 +35,10 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-lg">9 AM</span>
         </div>
-        <input type="text" class="form-control" aria-label="9 AM" aria-describedby="inputGroup-sizing-sm">
-        <button class="fas fa-save"></i>
+        <input type="text" id="input9" class="form-control" aria-label="9" aria-describedby="inputGroup-sizing-sm">
+        <button class="save">
+          <i class="fas fa-save"></i>
+          </button>
       </div>
       <br>
       <!--10 AM-->
@@ -44,8 +46,10 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-lg">10 AM</span>
         </div>
-        <input type="text" class="form-control" aria-label="10 AM" aria-describedby="inputGroup-sizing-sm">
-        <button class="fas fa-save"></i>
+        <input type="text" id="input10" class="form-control" aria-label="10" aria-describedby="inputGroup-sizing-sm">
+        <button class="save">
+          <i class="fas fa-save"></i>
+          </button>
       </div>
       <br>
       <!--11 AM-->
@@ -53,8 +57,10 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-lg">11 AM</span>
         </div>
-        <input type="text" class="form-control" aria-label="11 AM" aria-describedby="inputGroup-sizing-sm">
-        <button class="fas fa-save"></i>
+        <input type="text" id="input11" class="form-control" aria-label="11" aria-describedby="inputGroup-sizing-sm">
+        <button class="save">
+          <i class="fas fa-save"></i>
+          </button>
       </div>
       <br>
       <!--12 PM-->
@@ -62,8 +68,10 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-lg">12 PM</span>
         </div>
-        <input type="text" class="form-control" aria-label="12 PM" aria-describedby="inputGroup-sizing-sm">
-        <button class="fas fa-save"></i>
+        <input type="text" id="input12" class="form-control" aria-label="12" aria-describedby="inputGroup-sizing-sm">
+        <button class="save">
+          <i class="fas fa-save"></i>
+          </button>
       </div>
       <br>
       <!--1 PM-->
@@ -71,8 +79,10 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-lg">1 PM</span>
         </div>
-        <input type="text" class="form-control" aria-label="1 PM" aria-describedby="inputGroup-sizing-sm">
-        <button class="fas fa-save"></i>
+        <input type="text" id="input1" class="form-control" aria-label="1" aria-describedby="inputGroup-sizing-sm">
+        <button class="save">
+          <i class="fas fa-save"></i>
+          </button>
       </div>
       <br>
       <!--2 PM-->
@@ -80,8 +90,10 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-lg">2 PM</span>
         </div>
-        <input type="text" class="form-control" aria-label="2 PM" aria-describedby="inputGroup-sizing-sm">
-        <button class="fas fa-save"></i>
+        <input type="text" id="input2" class="form-control" aria-label="2" aria-describedby="inputGroup-sizing-sm">
+        <button class="save">
+          <i class="fas fa-save"></i>
+          </button>
       </div>
       <br>
       <!--3 PM-->
@@ -89,8 +101,10 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-lg">3 PM</span>
         </div>
-        <input type="text" class="form-control" aria-label="3 PM" aria-describedby="inputGroup-sizing-sm">
-        <button class="fas fa-save"></i>
+        <input type="text" id="input3" class="form-control" aria-label="3" aria-describedby="inputGroup-sizing-sm">
+        <button class="save">
+          <i class="fas fa-save"></i>
+          </button>
       </div>
       <br>
       <!--4 PM-->
@@ -98,8 +112,10 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-lg">4 PM</span>
         </div>
-        <input type="text" class="form-control" aria-label="4 PM" aria-describedby="inputGroup-sizing-sm">
-        <button class="fas fa-save"></i>
+        <input type="text" id="input4" class="form-control" aria-label="4" aria-describedby="inputGroup-sizing-sm">
+        <button class="save">
+          <i class="fas fa-save"></i>
+          </button>
       </div>
       <br>
       <!--5 PM-->
@@ -107,13 +123,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-lg">5 PM</span>
         </div>
-        <input type="text" class="form-control" aria-label="5 PM" aria-describedby="inputGroup-sizing-sm">
-        <button class="fas fa-save"></i>
+        <input type="text" id="input5" class="form-control" aria-label="5" aria-describedby="inputGroup-sizing-sm">
+        
       </div>
       <br>
-  
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
