@@ -37,6 +37,8 @@ function saveButton() {
       var lastSave = localStorage.getItem("inputBox")
       print.textContent = lastSave;
 
+      saveToLocalStorage(inputBox);
+
 };
 
 
