@@ -11,7 +11,7 @@ var inputBox = {
 };
 
 $(document).ready(function() {
-    if(localStorage.getItem("inputBox")) {
+    if(!localStorage.getItem("inputBox")) {
         updateInput("inputBox");
     }
     else {
@@ -21,23 +21,21 @@ $(document).ready(function() {
 
 $("#todays-date h2").text(moment().format("dddd") + ", " + moment().format("MMMM Do YYYY, h:mm:ss a"));
 
+
 function saveButton() {
-    saveButton.addEventListner("click")
-};
+    saveButton.addEventListner("click", function(event){
+        event.preventDefault();
+    });
 
-function initializeLocalStorage() {
-    localStorage.setItem("inputBox", JSON.stringify(inputBox));
-};
+    if (inputBox === "") {
+        localStorage.setItem("inputBox", JSON.stringify(inputBox));
+    }
+      
+      console.log(inputBox);
+      localStorage.setItem("inputBox", inputBox);
 
-function saveInputToLocalStorage() {
-    localStorage.setItem("inputBox", JSON.stringify(inputBox));
-};
-
-function saveSchedule() {
-    initializeLocalStorage();
-};
-
-function updateInputInSchedule(inputBox) {
+      var lastSave = localStorage.getItem("inputBox")
+      print.textContent = lastSave;
 
 };
 
